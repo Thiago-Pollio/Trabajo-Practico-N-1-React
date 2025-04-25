@@ -2,8 +2,10 @@ Programación Web Avanzada
 Trabajo Práctico nº1: REACT
 
 Integrantes del grupo: 
+
 Pollio, Thiago FAI-4267
 thiago.pollio@est.fi.uncoma.edu.ar
+
 Salgado, Sol FAI-4266
 sol.salgado@est.fi.uncoma.edu.ar
 
