@@ -30,93 +30,89 @@ function Home({
     ordenDireccion,
     setOrdenDireccion,
     scrollAlFormulario
+    })
 
-    
-    }) {
+{
 
-        const formularioRef = useRef(null);
+    const formularioRef = useRef(null);
 
 
     return (
 
         <div>
-        <div className={styles.header}>
-          <div className={styles.tituloBox}>
-            <Titulo />
-          </div>
+            <div className={styles.header}>
+              <div className={styles.tituloBox}>
+                <Titulo />
+              </div>
   
-          <div className={styles.acciones}>
-            <Buscador
-              terminoBusqueda={terminoBusqueda}
-              setTerminoBusqueda={setTerminoBusqueda}
-            />
-
-          </div>
-        </div>
-
-      <div className={styles.panelPrincipal}>
-        <div className={styles.columnaIzquierda}>
-          <div ref={formularioRef}>
-          <h2 className={styles.subtituloForm}>🎬 Agregar película o serie</h2>
-            <FormularioItem
-              onSubmit={agregarOEditarItem}
-              itemEditado={itemEditado}
-              modoEdicion={!!itemEditado}
-              cancelarEdicion={cancelarEdicion}
-            />
-          </div>
-
-          <div className={styles.controles}>
-            <div className={styles.vistas}>
-              <button
-                onClick={() => setFiltroVista('todos')}
-                className={filtroVista === 'todos' ? styles.activo : ''}
-              >
-                Todos
-              </button>
-              <button
-                onClick={() => setFiltroVista('porVer')}
-                className={filtroVista === 'porVer' ? styles.activo : ''}
-              >
-                Por ver
-              </button>
-              <button
-                onClick={() => setFiltroVista('vistos')}
-                className={filtroVista === 'vistos' ? styles.activo : ''}
-              >
-                Vistos
-              </button>
+              <div className={styles.acciones}>
+                <Buscador
+                  terminoBusqueda={terminoBusqueda}
+                  setTerminoBusqueda={setTerminoBusqueda}
+                />
+              </div>
             </div>
 
-            <FiltroGeneroTipo
-              filtroGenero={filtroGenero}
-              setFiltroGenero={setFiltroGenero}
-              filtroTipo={filtroTipo}
-              setFiltroTipo={setFiltroTipo}
-            />
+            <div className={styles.panelPrincipal}>
+                <div className={styles.columnaIzquierda}>
+                  <div ref={formularioRef}>
+                      <h2 className={styles.subtituloForm}>🎬 Agregar película o serie</h2>
+                        <FormularioItem
+                          onSubmit={agregarOEditarItem}
+                          itemEditado={itemEditado}
+                          modoEdicion={!!itemEditado}
+                          cancelarEdicion={cancelarEdicion}
+                        />
+                  </div>
 
-<div className={styles.ordenamiento}>
-              <label>
-                Ordenar por:
-                <select value={ordenCampo} onChange={(e) => setOrdenCampo(e.target.value)}>
-                  <option value="anio">Año</option>
-                  <option value="rating">Rating</option>
-                </select>
-              </label>
-              <label>
-                Dirección:
-                <select value={ordenDireccion} onChange={(e) => setOrdenDireccion(e.target.value)}>
-                  <option value="ascendente">Ascendente</option>
-                  <option value="descendente">Descendente</option>
-                </select>
-              </label>
+                  <div className={styles.controles}>
+                    <div className={styles.vistas}>
+                      <button
+                        onClick={() => setFiltroVista('todos')}
+                        className={filtroVista === 'todos' ? styles.activo : ''}>
+                        Todos
+                      </button>
+                      <button
+                        onClick={() => setFiltroVista('porVer')}
+                        className={filtroVista === 'porVer' ? styles.activo : ''}>
+                        Por ver
+                      </button>
+                      <button
+                        onClick={() => setFiltroVista('vistos')}
+                        className={filtroVista === 'vistos' ? styles.activo : ''}>
+                        Vistos
+                      </button>
+                    </div>
+
+                    <FiltroGeneroTipo
+                      filtroGenero={filtroGenero}
+                      setFiltroGenero={setFiltroGenero}
+                      filtroTipo={filtroTipo}
+                      setFiltroTipo={setFiltroTipo}
+                    />
+
+                    <div className={styles.ordenamiento}>
+                        <label>
+                             Ordenar por:
+                                <select value={ordenCampo} onChange={(e) => setOrdenCampo(e.target.value)}>
+                                    <option value="anio">Año</option>
+                                    <option value="rating">Rating</option>
+                                </select>
+                        </label>
+                        <label>
+                            Dirección:
+                                <select value={ordenDireccion} onChange={(e) => setOrdenDireccion(e.target.value)}>
+                                     <option value="ascendente">Ascendente</option>
+                                     <option value="descendente">Descendente</option>
+                                </select>
+                        </label>
+                    </div>
+                    
+                    <Contadores items={items} />
             </div>
-
-            <Contadores items={items} />
-          </div>
         </div>
 
-                <div className={styles.columnaDerecha}>
+        <div className={styles.columnaDerecha}>
           <h2 className={styles.tituloVista}>
             {filtroVista === 'porVer' && '🎬 Por ver'}
             {filtroVista === 'vistos' && '👁️ Vistas'}
