@@ -29,20 +29,19 @@ function Contadores({items}) {
             <strong>{vistos}</strong>
           </div>
         </div>
-            <div className={styles.generosGrid}>
-  <h3>🎭 Conteo por género</h3>
-  <div className={styles.generoCards}>
-    {Object.entries(conteoGeneros).map(([genero, cantidad]) => (
-      <div className={styles.generoCard} key={genero}>
-        <p>{genero}</p>
-        <strong>{cantidad}</strong>
-      </div>
-    ))}
-  </div>
-</div>
-
+        <div className={styles.generosGrid}>
+          <h3>🎭 Conteo por género</h3>
+              <div className={styles.generoCards}>
+                {Object.entries(conteoGeneros).map(([genero, cantidad]) => (
+                  <div className={styles.generoCard} key={genero}>
+                    <p>{genero}</p>
+                    <strong>{cantidad}</strong>
+                  </div>
+                ))}
+              </div>
         </div>
-    );
+    </div>
+  );
 }
 
 export default Contadores;
