@@ -24,6 +24,8 @@ Debe haber:
 -Si no hay ítems en una lista, debe mostrarse un mensaje indicando que está vacía.
 -Si no hay resultados que coincidan con los filtros, también debe mostrarse un mensaje adecuado.
 
+Link a la app: https://trabajo-practico-n-1-react-dz9s.vercel.app/
+
 La aplicación permite agregar/editar/eliminar películas o series, mediante un formulario que al presionar el boton de agregar, automaticamente aparece la tarjeta con el item agregado a un lado. Debajo del formulario, hay un "panel" con distintos botones, opciones e información, para elegir la vista (ver todas las películas/series, solo las ya vistas o solo las que no se vieron), para filtrar (por genero o por tipo), para ordenar (de manera ascendente y descendente, por año o rating), y para ver cuantas películas o series se han agregado, cuantas se marcaron como vistas (se hace en la propia tarjeta del item), y cuantas siguen sin ver, además de poder ver cuantos proyectos de cada genero hay guardados. Tambíen hay un buscador, en el cuál se puede ingresar el titulo de un proyecto o el director del mismo para encontrarlo mas facilmente.
 
 Funcionalidad de los archivos principales: 
