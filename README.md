@@ -10,7 +10,8 @@ Salgado, Sol FAI-4266
 sol.salgado@est.fi.uncoma.edu.ar
 
 Enunciado: 
-Gestor de Películas y Series por Ver y Vistas 
+Gestor de Películas y Series por Ver y Vistas
+
 Construir en React una aplicación que funcione como un gestor personal de películas y series. 
 La aplicación debe permitir al usuario agregar nuevas películas o series, marcarlas como vistas, editarlas y eliminarlas (con confirmación). 
 Cada ítem debe tener título, director, año, género (usar un select para este campo), rating y tipo (película o serie). 
