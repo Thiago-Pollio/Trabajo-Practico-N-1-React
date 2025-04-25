@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.tituloBox {
+  flex: 1;
+  min-width: 250px;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .acciones {
+    align-items: center;
+  }
+}
+
+.listaItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    min-height: 300px;
+  }
+
+  .vistas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .vistas button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+
+  .vistas button:hover {
+    background-color: #436eee;
+  }
+
+  .ordenamiento {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-left: 80px;
+  }
+
+  .ordenamiento select {
+    margin-left: 8px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .activo {
+    background-color: #e50914;
+    color: white;
+  }
+
+
+
+  .panelPrincipal {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    min-height: 650px;
+  }
+  
+  .columnaIzquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .controles {
+    background-color: #554949;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+  }
+  
+  
+  .columnaDerecha {
+    flex: 2;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tituloVista{
+    font-size: 2rem;
+    margin-top: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .subtituloForm {
+    font-size: 1.3rem;
+    color: #000000;
+    margin-bottom: -30px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: background-color 0.2s;
+  }

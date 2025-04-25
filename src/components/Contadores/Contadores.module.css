@@ -1,0 +1,97 @@
+
+.contadoresWrapper {
+    margin-top: 30px;
+  }
+  
+  .contadorGrid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .cardContador {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 19px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+
+  
+  .cardContador span {
+    font-size: 1.5rem;
+  }
+  
+  .cardContador p {
+    margin: 5px 0;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .cardContador strong {
+    font-size: 1.4rem;
+    color: #e50914;
+  }
+  
+  .contadorGenero {
+    margin-top: 10px;
+  }
+  
+  .contadorGenero h3 {
+    margin-bottom: 8px;
+    color: #444;
+  }
+  
+  .contadorGenero ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contadorGenero li {
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+  }
+
+  .generosGrid {
+    margin-top: 20px;
+  }
+  
+  .generosGrid h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .generoCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .generoCard {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: background-color 0.2s;
+  }
+
+  
+  .generoCard p {
+    margin: 0;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .generoCard strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #e50914;
+  }

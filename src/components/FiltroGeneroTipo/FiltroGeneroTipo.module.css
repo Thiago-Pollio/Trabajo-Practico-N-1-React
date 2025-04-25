@@ -1,0 +1,17 @@
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .filtros label {
+    font-weight: bold;
+  }
+  
+  .filtros select {
+    margin-left: 8px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
