@@ -42,6 +42,8 @@ Instrucciones de instalación:
 3- Ejecutar la aplicación: npm start
 
 Capturas de pantalla:
+
 ![image](https://github.com/user-attachments/assets/5e3ef35e-f6e8-4a4e-8c79-b4cd3c3a394e)
+
 ![image](https://github.com/user-attachments/assets/d07d1516-87e2-45a8-9c8a-b479e13b473f)
 
