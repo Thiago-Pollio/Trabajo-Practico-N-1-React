@@ -40,7 +40,7 @@ index.css: Es un archivo CSS tradicional que aplica estilos globales.
 
 package-json.js: Es un archivo de configuración que usa Node.js (y npm), que define las dependencias, scripts y más para la gestión del proyecto.
 
-Instrucciones de instalación:
+Instrucciones de instalación (correr cada comando):
 
 1- Clonar el repositorio: git clone https://github.com/Thiago-Pollio/Trabajo-Practico-N-1-React.git
 
