@@ -1,5 +1,6 @@
 import { useState, useEffect  } from 'react'
 import './App.css'
+//No importen elementos que no van a utilizar
 import Titulo from './components/Titulo/Titulo.jsx'
 import Home from '../pages/Home/home'
 import FormularioItem from './components/FormularioItem/FormularioItem.jsx'

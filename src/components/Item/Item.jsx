@@ -18,11 +18,13 @@ function Item({item, cambiarEstadoVisto, iniciarEdicion, eliminarItem}) {
                 className={styles.imagen}
                 />
             )}
+            {/* no usen br para dar espaciado entre elementos, usen marging/pading */}
             <br />
             <div className={styles.botones}>
                 <button className={`${styles.boton} ${item.vista ? styles.visto : styles.noVisto}`} onClick={() => cambiarEstadoVisto(item.id)}>
                     {item.vista ? 'Marcar como no visto' : 'Marcar como visto'}
                 </button>
+            {/* Este button deberia ser un componente reutilizable con variants de estiloo eliminar/editar */}
                 <button className={`${styles.boton} ${styles.editar}`} onClick={() => iniciarEdicion(item)}>Editar</button>
                 <button className={`${styles.boton} ${styles.eliminar}`} onClick={() => eliminarItem(item.id)}>Eliminar</button>
             </div>

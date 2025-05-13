@@ -8,6 +8,9 @@ import { useRef } from 'react';
 import styles from './Home.module.css';
 
 
+//Home no deberia recibir estar props. Todo esto es parte del state y funcionalidad de home asi que 
+//deberian estar definidas en este archivo.
+
 function Home({
     items,
     itemEditado,
