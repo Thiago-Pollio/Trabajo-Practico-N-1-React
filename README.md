@@ -1,3 +1,17 @@
+Correcciones:
+
+- Cumple con los requerimientos del proyecto.
+- Buen uso de local storage, useEffect y useState
+
+Observaciones:
+- Borren codigo comentado/que no se usa antes de entregar.
+- Borren archivos que se generan por defecto como vite.svg
+- La carpeta Pages/Home deberia estar dentro de src.
+- Revisar las props de Home.
+- Se podria componetizar un poco mas para poder reutilizar el codigo.
+
+Nota: 9
+
 Programación Web Avanzada
 Trabajo Práctico nº1: REACT
 
